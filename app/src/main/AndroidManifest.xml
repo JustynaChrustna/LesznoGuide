@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HotelsActivity"></activity>
+        <activity android:name=".HotelsActivity" />
+        <activity android:name=".RestaurantsActivity"></activity>
     </application>
 
 </manifest>

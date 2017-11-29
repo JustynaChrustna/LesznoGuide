@@ -19,14 +19,14 @@ public class HotelsActivity extends AppCompatActivity {
         setContentView(R.layout.place_list);
 
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Hotel Julinek", "Julinek 1, 05-084 Leszno, Polska", R.drawable.hotels_julinek));
-        places.add(new Place("Apisołtysówka", "Powązki 11a, 05-084 Leszno, Polska", R.drawable.hotels_apisoltysowka));
-        places.add(new Place("Agroturystyka Korfowe", "Korfowe 7, 05-085 Kampinos, Polska", R.drawable.hotels_korfowe));
-        places.add(new Place("Klub Przystań", "ul. Krótka 2, 05-084 Leszno. Polska", R.drawable.hotels_przystan));
-        places.add(new Place("Stajnia Mandra", "Korfowe 8, 05-085 Kampinos, Polska", R.drawable.hotels_mandra));
-        places.add(new Place("Agroturystyka Izabella", "Powązki 14, 05-084 Leszno, Polska", R.drawable.hotels_izabella));
-        places.add(new Place("Agroturystyka Dom na Górce", "Szymanówek 11, 05-084 Leszno, Polska", R.drawable.hotels_nagorce));
-        places.add(new Place("Centrum Szkoleniowo Konsultacyjne BGŻ", "ul. Fabryczna 1, 05-084 Leszno, Polska", R.drawable.hotels_bgz));
+        places.add(new Place("Hotel Julinek", "Julinek 1"+"\n"+"05-084 Leszno", R.drawable.hotels_julinek));
+        places.add(new Place("Apisołtysówka", "Powązki 11a"+"\n"+"05-084 Leszno", R.drawable.hotels_apisoltysowka));
+        places.add(new Place("Agroturystyka Korfowe", "Korfowe 7"+"\n"+"05-085 Kampinos", R.drawable.hotels_korfowe));
+        places.add(new Place("Klub Przystań", "ul. Krótka 2"+"\n"+"05-084 Leszno", R.drawable.hotels_przystan));
+        places.add(new Place("Stajnia Mandra", "Korfowe 8"+"\n"+"05-085 Kampinos", R.drawable.hotels_mandra));
+        places.add(new Place("Agroturystyka Izabella", "Powązki 14"+"\n"+"05-084 Leszno", R.drawable.hotels_izabella));
+        places.add(new Place("Agroturystyka Dom na Górce", "Szymanówek 11"+"\n"+"05-084 Leszno", R.drawable.hotels_nagorce));
+        places.add(new Place("Centrum Szkoleniowo Konsultacyjne BGŻ", "ul. Fabryczna 1"+"\n"+"05-084 Leszno", R.drawable.hotels_bgz));
 
 
         PlaceAdapter adapter = new PlaceAdapter(this, places);

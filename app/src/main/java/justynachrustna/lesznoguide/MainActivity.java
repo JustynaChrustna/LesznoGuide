@@ -72,10 +72,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_hotels) {
-            Intent restaurantsIntent = new Intent(MainActivity.this, HotelsActivity.class);
-            startActivity(restaurantsIntent);
+            Intent hotelsIntent = new Intent(MainActivity.this, HotelsActivity.class);
+            startActivity(hotelsIntent);
         } else if (id == R.id.nav_restaurants) {
-
+            Intent restaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
+            startActivity(restaurantsIntent);
         } else if (id == R.id.nav_attractions) {
 
         } else if (id == R.id.nav_books) {
