@@ -1,6 +1,9 @@
 package justynachrustna.lesznoguide;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
@@ -17,9 +20,10 @@ import java.util.ArrayList;
  */
 
 public class PlaceAdapter extends ArrayAdapter<Place> {
-
+    private Context context;
     public PlaceAdapter(Activity context, ArrayList<Place> places) {
         super(context, 0, places);
+
 
     }
 
@@ -27,11 +31,19 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
-
+        final Place currentPlace = getItem(position);
         if (listItemView == null) {
+            if(currentPlace.getUrl()!=null){
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            }
+            else{
+                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item2, parent, false);
+            }
         }
-        Place currentPlace = getItem(position);
+
+
+
+
         TextView placeNameTextView = (TextView) listItemView.findViewById(R.id.place_name_text_view);
         placeNameTextView.setText(currentPlace.getPlaceName());
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
@@ -44,6 +56,7 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         else{
             imageView.setVisibility(View.GONE);
         }
+
 
 
 

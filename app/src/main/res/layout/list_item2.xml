@@ -44,15 +44,7 @@
             tools:text="one" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/web_icon"
-        android:layout_width="0dp"
-        android:layout_height="88dp"
-        android:layout_weight="1"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
 
-        android:src="@mipmap/ic_public_black_24dp" />
 
 
 
