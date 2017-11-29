@@ -78,7 +78,8 @@ public class MainActivity extends AppCompatActivity
             Intent restaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
             startActivity(restaurantsIntent);
         } else if (id == R.id.nav_attractions) {
-
+            Intent attractionsIntent = new Intent(MainActivity.this, AttractionsActivity.class);
+            startActivity(attractionsIntent);
         } else if (id == R.id.nav_books) {
 
         }
