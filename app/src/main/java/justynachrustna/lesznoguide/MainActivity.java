@@ -1,5 +1,6 @@
 package justynachrustna.lesznoguide;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -10,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +34,52 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        ImageButton places= (ImageButton) findViewById(R.id.ib_places);
+        ImageButton restaurants=(ImageButton) findViewById(R.id.ib_restaurants);
+        ImageButton hotels=(ImageButton) findViewById(R.id.ib_hotels);
+        ImageButton books=(ImageButton) findViewById(R.id.ib_books);
+        ImageButton shops=(ImageButton) findViewById(R.id.ib_shops);
+        ImageButton bus=(ImageButton) findViewById(R.id.ib_bus);
+        ImageButton phones=(ImageButton) findViewById(R.id.ib_phone);
+        ImageButton navigation=(ImageButton) findViewById(R.id.ib_navigation);
+        ImageButton info=(ImageButton) findViewById(R.id.ib_info);
+        places.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent attractionsIntent = new Intent(MainActivity.this, AttractionsActivity.class);
+                startActivity(attractionsIntent);
+            }
+        });
+        restaurants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent restaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
+                startActivity(restaurantsIntent);
+            }
+        });
+        hotels.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent hotelsIntent = new Intent(MainActivity.this, HotelsActivity.class);
+                startActivity(hotelsIntent);
+            }
+        });
+        books.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent booksIntent = new Intent(MainActivity.this, BooksActivity.class);
+                startActivity(booksIntent);
+            }
+        });
+        shops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent shopsIntent = new Intent(MainActivity.this, ShopsActivity.class);
+                startActivity(shopsIntent);
+            }
+        });
     }
 
     @Override

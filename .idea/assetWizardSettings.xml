@@ -95,8 +95,8 @@
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="050233" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="C:\Users\justyna\Downloads\directions_bus-white-48dp\2x\round_directions_bus_white_48dp.png" />
-                                      <entry key="outputName" value="ic_bus" />
+                                      <entry key="imageAsset" value="C:\Users\justyna\Downloads\local_phone-white-48dp\2x\round_local_phone_white_48dp.png" />
+                                      <entry key="outputName" value="ic_phone" />
                                     </map>
                                   </option>
                                 </PersistentState>

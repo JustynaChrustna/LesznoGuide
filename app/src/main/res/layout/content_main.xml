@@ -34,7 +34,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="@color/colorDarkBlue"
         android:orientation="vertical">
         <LinearLayout
@@ -43,16 +43,18 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <ImageButton
+                android:id="@+id/ib_places"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_to_see"
+                android:src="@mipmap/ic_star"
                 android:scaleType="centerCrop"
                 android:padding="40dp"
                 android:background="@color/colorDarkBlue">
 
             </ImageButton>
             <ImageButton
+                android:id="@+id/ib_restaurants"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -63,6 +65,7 @@
 
             </ImageButton>
             <ImageButton
+                android:id="@+id/ib_hotels"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -80,6 +83,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <ImageButton
+                android:id="@+id/ib_books"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -90,6 +94,7 @@
 
             </ImageButton>
             <ImageButton
+                android:id="@+id/ib_shops"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -100,6 +105,7 @@
 
             </ImageButton>
             <ImageButton
+                android:id="@+id/ib_bus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -110,8 +116,45 @@
 
             </ImageButton>
 
+        </LinearLayout>
+        <LinearLayout
 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/ib_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_phone"
+                android:scaleType="centerCrop"
+                android:padding="40dp"
+                android:background="@color/colorDarkBlue">
 
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/ib_navigation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_navigation"
+                android:scaleType="centerCrop"
+                android:padding="40dp"
+                android:background="@color/colorDarkBlue">
+
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/ib_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_info"
+                android:scaleType="centerCrop"
+                android:padding="40dp"
+                android:background="@color/colorDarkBlue">
+
+            </ImageButton>
 
         </LinearLayout>
 </LinearLayout>
